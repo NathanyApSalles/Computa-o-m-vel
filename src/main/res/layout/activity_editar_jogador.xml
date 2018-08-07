@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.ufop.nathany.futmannathany.EditarJogador">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Jogador"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/etNomeJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posição do Jogador"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <Spinner
+        android:id="@+id/sPosicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:hint="912345678"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_weight="1"
+            android:onClick="salvarJogador"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:background="#166007"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/buttonDeletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deletar"
+            android:layout_weight="1"
+            android:onClick="deletarJogador"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:background="#166007"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gramacampo"
+            android:gravity="bottom"
+            />
+    </LinearLayout>
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                android:onClick="deletarJogador"/>
+
+
+
+
+</LinearLayout>

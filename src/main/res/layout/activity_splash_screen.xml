@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gramado">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|center_vertical"
+        android:text="FutManNathany"
+        android:textColor="#FFF"
+        android:textSize="45dp" />
+
+
+
+
+</LinearLayout>

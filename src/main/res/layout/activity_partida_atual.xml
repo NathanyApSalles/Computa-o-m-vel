@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.ufop.nathany.futmannathany.PartidaAtual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/buttonPlayStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:onClick="playStopChronometer"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="#166007"/>
+
+        <Chronometer
+            android:id="@+id/chronometer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encerrar"
+            android:onClick="initDialogEncerrar"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="#166007"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/camisaazul" />
+
+        <TextView
+            android:id="@+id/tvGolTimeA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bola"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tvGolTimeB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/camisavermelha" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/listaTimeA"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"></ListView>
+
+        <ListView
+            android:id="@+id/listaTimeB"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/ButtonGolTimeA"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bola"
+            android:onClick="golTimeA"/>
+        <TextView
+            android:id="@+id/ButtonSubsTimeA"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/ButtonCartaoTimeA"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cartoes"
+            android:onClick="cartaoTimeA"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/ButtonGolTimeB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/bola"
+            android:onClick="golTimeB"/>
+        <TextView
+            android:id="@+id/ButtonSubsTimeB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/ButtonCartaoTimeB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/cartoes"
+            android:onClick="cartaoTimeB"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reservas"
+            android:onClick="jogadoresEspera"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="#166007"
+            android:layout_marginRight="10dp"/>
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Configurar"
+            android:onClick="novaPartida"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="#166007"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:textSize="20dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gramacampo"
+            android:gravity="bottom"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
