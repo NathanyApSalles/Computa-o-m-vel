@@ -1,2 +1,2 @@
-# Computa-o-m-vel
+# Computacao-movel
 Primeiro trabalho prático de computação móvel 
